@@ -42,6 +42,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   setState(() {
                     leftDiceNumber = Random().nextInt(6) + 1;
+                    rightDiceNumber = Random().nextInt(6) + 1;
                     print('dice number = $leftDiceNumber');
                   });
                 },
@@ -55,6 +56,7 @@ class _HomePageState extends State<HomePage> {
               child: TextButton(
                 onPressed: () {
                   setState(() {
+                    leftDiceNumber = Random().nextInt(6) + 1;
                     rightDiceNumber = Random().nextInt(6) + 1;
                     print('dice number = $rightDiceNumber');
                   });
